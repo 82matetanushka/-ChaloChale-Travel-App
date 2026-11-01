@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet">
+</head>
+<body>
+    
+    <button class="btn btn-success" id="showtoast">save</button>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div class="toast" id="mytoast">
+            <div class="toast-body">
+                changes saved successfully!!!
+            </div>
+        </div>
+    </div>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //identify the toast section
+       const toastsection=document.getElementById("mytoast");
+
+       //create toast object by new keyword
+       const toast= new bootstrap.Toast(toastsection);
+
+       //add event on button
+    document.getElementById("showtoast").addEventListener("click", function()
+    {
+        //call show() method
+         toast.show();
+    });
+    </script>
+    
+</body>
+</html>

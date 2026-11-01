@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet">
+</head>
+<body>
+     <h3>FAQs</h3>
+
+     <div class="accordion" id="myaccordion">
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              
+               <button class="accordion-button"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#answer">
+                What is Bootstrap?
+               </button>
+            </h2>
+        </div>
+
+        <div id="answer">
+            <div class="accordion-collapse collapse show"
+            data-bs-target="myaccordion">
+            <div class="accordion-body">
+                Bootstrap is a front-end framework used to
+                    create responsive websites
+
+            </div>
+           </div>
+        </div>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
